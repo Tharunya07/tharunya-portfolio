@@ -1,0 +1,100 @@
+{
+  "projects": [
+    {
+      "id": "wiresnitch",
+      "title": "Wiresnitch",
+      "shortDescription": "Real-time network security monitoring system for Linux environments",
+      "fullDescription": "A comprehensive network traffic monitoring solution featuring interactive dashboards, packet inspection, anomaly detection, and automated log analysis with dockerized CI/CD deployment.",
+      "technologies": [
+        "Linux",
+        "Docker",
+        "CI/CD",
+        "Network Security",
+        "Shell Scripting"
+      ],
+      "category": "security",
+      "status": "completed",
+      "featured": true,
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/Tharunya07/wiresnitch",
+          "label": "View Source"
+        }
+      ],
+      "features": [
+        {
+          "title": "Real-time Monitoring",
+          "description": "Live packet capture and analysis with interactive dashboard"
+        },
+        {
+          "title": "Anomaly Detection",
+          "description": "Machine learning-based detection of suspicious network activity"
+        }
+      ],
+      "images": ["wiresnitch-dashboard.png"],
+      "startDate": "2024-01-15",
+      "endDate": "2024-03-20"
+    },
+    {
+      "id": "cipherYou",
+      "title": "CipherYou",
+      "shortDescription": "Cross-platform file encryption tool with AES-256 security",
+      "fullDescription": "A secure file encryption application featuring AES-256 encryption, PBKDF2 key derivation, password protection, and intuitive PyQt5 interface.",
+      "technologies": ["Python", "PyQt5", "Cryptography", "UI/UX"],
+      "category": "security",
+      "status": "completed",
+      "featured": true,
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/Tharunya07/cipherYou",
+          "label": "View Source"
+        }
+      ],
+      "features": [
+        {
+          "title": "Military-Grade Encryption",
+          "description": "AES-256 encryption with PBKDF2 key derivation"
+        },
+        {
+          "title": "Secure File Deletion",
+          "description": "Overwrite original files to prevent recovery"
+        }
+      ],
+      "images": ["cipherYou-ui.png"],
+      "startDate": "2023-10-01",
+      "endDate": "2023-12-15"
+    },
+    {
+      "id": "cyhelp",
+      "title": "CyHelp",
+      "shortDescription": "AI-powered content safety detection system - Global CyberPeace Challenge Winner",
+      "fullDescription": "An intelligent content moderation system using computer vision and NLP to detect harmful content in real-time, featuring automated reporting and user verification.",
+      "technologies": ["OpenCV", "Flask", "REST API", "NoSQL", "ML", "NLP"],
+      "category": "ai",
+      "status": "completed",
+      "featured": true,
+      "links": [
+        {
+          "type": "github",
+          "url": "https://github.com/Tharunya07/cyhelp",
+          "label": "View Source"
+        }
+      ],
+      "features": [
+        {
+          "title": "Real-time Detection",
+          "description": "Instant analysis of images and text content"
+        },
+        {
+          "title": "Automated Reporting",
+          "description": "Generate comprehensive safety reports automatically"
+        }
+      ],
+      "images": ["cyhelp-dashboard.png"],
+      "startDate": "2023-06-01",
+      "endDate": "2023-09-30"
+    }
+  ]
+}
