@@ -1,0 +1,135 @@
+{
+  "tech-manager": {
+    "summary": "Experienced software engineer with expertise in security, cloud computing, and DevOps. Proven track record of leading technical initiatives, optimizing workflows, and building scalable systems. Strong background in automation, CI/CD pipelines, and cross-functional team collaboration.",
+    "experience": [
+      {
+        "company": "Colorado State University",
+        "position": "Graduate Teaching Assistant, EMEC Lab",
+        "duration": "Jan 2025 - Present",
+        "description": [
+          "Engineering IoT-enabled Access Management System using Python, SQL, and Linux",
+          "Managing cross-college collaborations for procurement optimization",
+          "Mentoring 50+ students on manufacturing processes and industrial automation"
+        ],
+        "technologies": ["Python", "SQL", "Linux", "IoT", "Automation"]
+      },
+      {
+        "company": "Nokia",
+        "position": "Software Engineering Intern",
+        "duration": "Oct 2023 - Jul 2024",
+        "description": [
+          "Devised AI-driven LLM ChatOps model reducing manual effort by 40%",
+          "Refined cloud-based MN RAN COSI architecture increasing scalability by 17%",
+          "Automated 5G network deployment pipelines reducing operational lag by 35%"
+        ],
+        "technologies": ["Python", "AWS", "Docker", "Kubernetes", "Jenkins"]
+      }
+    ],
+    "education": [
+      {
+        "institution": "Colorado State University",
+        "degree": "Master of Science in Computer Information Systems",
+        "duration": "Aug 2024 - Dec 2025",
+        "gpa": "3.5/4.0"
+      }
+    ],
+    "skills": {
+      "programming": ["Python", "JavaScript", "Java", "C++", "SQL"],
+      "technical": [
+        "Cloud Computing",
+        "DevOps",
+        "Cybersecurity",
+        "Machine Learning"
+      ],
+      "tools": ["Docker", "Kubernetes", "Jenkins", "AWS", "Linux"]
+    },
+    "projects": [],
+    "certifications": [
+      "Cisco IT Essentials",
+      "Google UX Professional Certificate"
+    ],
+    "leadership": []
+  },
+  "startup-founder": {
+    "summary": "Innovative technologist and problem-solver with a passion for building scalable solutions from the ground up. Experience in full-stack development, AI integration, and rapid prototyping. Strong leadership background with proven ability to organize teams and deliver impactful projects.",
+    "experience": [
+      {
+        "company": "Nokia",
+        "position": "Software Engineering Intern",
+        "duration": "Oct 2023 - Jul 2024",
+        "description": [
+          "Built AI-driven ChatOps model from scratch, revolutionizing team workflows",
+          "Architected scalable cloud infrastructure handling enterprise-level traffic",
+          "Led DevOps transformation initiatives across multiple engineering teams"
+        ],
+        "technologies": ["Python", "AWS", "Docker", "Kubernetes", "AI/ML"]
+      }
+    ],
+    "education": [
+      {
+        "institution": "Colorado State University",
+        "degree": "Master of Science in Computer Information Systems",
+        "duration": "Aug 2024 - Dec 2025"
+      }
+    ],
+    "skills": {
+      "programming": ["Python", "JavaScript", "React", "Node.js"],
+      "technical": ["Full-Stack Development", "AI/ML", "Product Development"],
+      "tools": ["Docker", "AWS", "MongoDB", "React"]
+    },
+    "projects": [],
+    "certifications": [],
+    "leadership": [
+      {
+        "role": "Google Developer Student Club Lead",
+        "organization": "University",
+        "description": "Organized 2 state-level hackathons and 24 workshops impacting 1000+ students"
+      }
+    ]
+  },
+  "academic": {
+    "summary": "Research-oriented computer scientist with strong academic credentials and practical experience in cybersecurity, machine learning, and software engineering. Published work and active participation in academic communities. Focus on applying theoretical knowledge to solve real-world problems.",
+    "experience": [
+      {
+        "company": "Colorado State University",
+        "position": "Graduate Teaching Assistant & Researcher",
+        "duration": "Jan 2025 - Present",
+        "description": [
+          "Conducting research on IoT security and access management systems",
+          "Teaching and mentoring undergraduate students in engineering principles",
+          "Publishing research on industrial automation and security protocols"
+        ],
+        "technologies": ["Python", "Research Methods", "IoT Security", "Linux"]
+      }
+    ],
+    "education": [
+      {
+        "institution": "Colorado State University",
+        "degree": "Master of Science in Computer Information Systems",
+        "duration": "Aug 2024 - Dec 2025",
+        "gpa": "3.5/4.0",
+        "achievements": ["Graduate Teaching Assistant", "Research Publications"]
+      },
+      {
+        "institution": "Sathyabama Institute of Science and Technology",
+        "degree": "Bachelor of Science in Computer Science Engineering",
+        "duration": "2020 - 2024",
+        "gpa": "9.27/10",
+        "achievements": ["Top 1% Graduate", "Best Outgoing Student Award"]
+      }
+    ],
+    "skills": {
+      "programming": ["Python", "R", "MATLAB", "Java"],
+      "technical": [
+        "Machine Learning",
+        "Data Analysis",
+        "Research Methods",
+        "Cybersecurity"
+      ],
+      "tools": ["PyTorch", "TensorFlow", "Jupyter", "LaTeX"]
+    },
+    "projects": [],
+    "certifications": ["Google Foundation of Cybersecurity"],
+    "leadership": []
+  }
+}

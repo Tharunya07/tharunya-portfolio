@@ -1,0 +1,122 @@
+{
+  "categories": [
+    {
+      "name": "Programming Languages",
+      "technologies": [
+        {
+          "name": "Python",
+          "icon": "���",
+          "experience": "Expert",
+          "years": 4,
+          "description": "Primary language for automation, data analysis, and backend development. Used in 90% of my projects."
+        },
+        {
+          "name": "JavaScript",
+          "icon": "⚡",
+          "experience": "Advanced",
+          "years": 3,
+          "description": "Full-stack web development with React, Node.js, and modern frameworks."
+        },
+        {
+          "name": "Java",
+          "icon": "☕",
+          "experience": "Intermediate",
+          "years": 2,
+          "description": "Object-oriented programming and enterprise application development."
+        },
+        {
+          "name": "C++",
+          "icon": "⚙️",
+          "experience": "Intermediate",
+          "years": 2,
+          "description": "System programming and performance-critical applications."
+        }
+      ]
+    },
+    {
+      "name": "Cloud & DevOps",
+      "technologies": [
+        {
+          "name": "Docker",
+          "icon": "���",
+          "experience": "Advanced",
+          "years": 2,
+          "description": "Containerization and microservices architecture for scalable deployments."
+        },
+        {
+          "name": "Kubernetes",
+          "icon": "⛵",
+          "experience": "Intermediate",
+          "years": 1,
+          "description": "Container orchestration and cloud-native application deployment."
+        },
+        {
+          "name": "AWS",
+          "icon": "☁️",
+          "experience": "Advanced",
+          "years": 2,
+          "description": "Cloud infrastructure, serverless computing, and scalable architectures."
+        },
+        {
+          "name": "Jenkins",
+          "icon": "���",
+          "experience": "Intermediate",
+          "years": 1,
+          "description": "CI/CD pipelines and automated deployment workflows."
+        }
+      ]
+    },
+    {
+      "name": "Security & Networking",
+      "technologies": [
+        {
+          "name": "Network Security",
+          "icon": "���️",
+          "experience": "Advanced",
+          "years": 3,
+          "description": "Packet analysis, intrusion detection, and security monitoring systems."
+        },
+        {
+          "name": "Cryptography",
+          "icon": "���",
+          "experience": "Advanced",
+          "years": 2,
+          "description": "Encryption algorithms, key management, and secure communication protocols."
+        },
+        {
+          "name": "Linux Systems",
+          "icon": "��",
+          "experience": "Expert",
+          "years": 4,
+          "description": "System administration, shell scripting, and server management."
+        }
+      ]
+    },
+    {
+      "name": "Data & AI",
+      "technologies": [
+        {
+          "name": "Machine Learning",
+          "icon": "��",
+          "experience": "Advanced",
+          "years": 2,
+          "description": "PyTorch, TensorFlow, and scikit-learn for intelligent applications."
+        },
+        {
+          "name": "Data Analysis",
+          "icon": "���",
+          "experience": "Advanced",
+          "years": 3,
+          "description": "Pandas, NumPy, and statistical analysis for data-driven insights."
+        },
+        {
+          "name": "SQL/NoSQL",
+          "icon": "���️",
+          "experience": "Advanced",
+          "years": 3,
+          "description": "Database design, optimization, and both relational and document databases."
+        }
+      ]
+    }
+  ]
+}
