@@ -1,0 +1,83 @@
+// Create these files in your /public/data/ directory:
+
+// /public/data/stuff-i-love.txt
+---
+title: Clean Code: A Handbook of Agile Software Craftsmanship
+category: book
+description: A guide to writing readable, maintainable code that stands the test of time.
+commentary: This book completely changed how I think about code quality. Every developer should read this at least twice. Uncle Bob's principles have saved me countless hours in debugging and code reviews.
+author: Robert C. Martin
+rating: 5
+image: 📚
+tags: software-engineering, best-practices, agile
+year: 2008
+link: https://www.amazon.com/Clean-Code-Handbook-Software-Craftsmanship/dp/0132350884
+
+---
+title: The System Design Primer
+category: tool
+description: Learn how to design large-scale systems. Prep for the system design interview.
+commentary: This GitHub repo is pure gold! It breaks down complex system design concepts into digestible pieces. I reference this constantly when architecting new projects.
+author: Donne Martin
+rating: 5
+image: 🏗️
+tags: system-design, scalability, architecture
+link: https://github.com/donnemartin/system-design-primer
+
+---
+title: Designing Data-Intensive Applications
+category: book
+description: The big ideas behind reliable, scalable, and maintainable systems.
+commentary: Kleppmann's masterpiece on modern data systems. Essential reading for understanding how to build systems that actually work at scale. Dense but incredibly rewarding.
+author: Martin Kleppmann
+rating: 5
+image: 📊
+tags: databases, distributed-systems, architecture
+year: 2017
+link: https://dataintensive.net/
+
+// /public/data/tech-stack.txt
+---
+name: Python
+category: language
+icon: 🐍
+proficiency: 95
+experience: 4+ years
+commentary: My go-to language for everything from web development to machine learning. I love its readability and vast ecosystem. Used it extensively at Nokia for AI-driven ChatOps and at CSU for IoT systems.
+projects: CyHelp, Wiresnitch, Nokia ChatOps, CSU IoT System
+learningstatus: expert
+lastused: Currently using
+certification: Python Institute PCAP
+
+---
+name: JavaScript/TypeScript
+category: language
+icon: ⚡
+proficiency: 88
+experience: 3+ years
+commentary: Essential for modern web development. TypeScript has been a game-changer for catching bugs early and improving code maintainability. Building this portfolio really deepened my understanding of React and Next.js.
+projects: Portfolio Website, CipherYou UI, Nokia Dashboard
+learningstatus: proficient
+lastused: Currently using
+
+---
+name: Docker
+category: devops
+icon: 🐳
+proficiency: 85
+experience: 2+ years
+commentary: Containerization revolutionized my development workflow. No more "works on my machine" issues! Used extensively at Nokia for 5G infrastructure deployment and personal projects.
+projects: Wiresnitch, Nokia COSI Architecture, CI/CD Pipelines
+learningstatus: proficient
+lastused: 1 week ago
+
+---
+name: React/Next.js
+category: framework
+icon: ⚛️
+proficiency: 82
+experience: 2+ years
+commentary: The component-based architecture clicked immediately for me. Next.js added the perfect balance of performance and developer experience. This portfolio is built with Next.js and I love how it handles SSR.
+projects: Portfolio Website, CipherYou Interface, Dashboard UIs
+learningstatus: proficient
+lastused: Currently using

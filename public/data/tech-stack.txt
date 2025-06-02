@@ -1,0 +1,167 @@
+---
+name: Python
+category: language
+icon: 🐍
+proficiency: 95
+experience: 4+ years
+commentary: My go-to language for everything from web development to machine learning. I love its readability and vast ecosystem. Used it extensively at Nokia for AI-driven ChatOps and at CSU for IoT systems.
+projects: CyHelp, Wiresnitch, Nokia ChatOps, CSU IoT System
+learningstatus: expert
+lastused: Currently using
+certification: Python Institute PCAP
+
+---
+name: JavaScript/TypeScript
+category: language
+icon: ⚡
+proficiency: 88
+experience: 3+ years
+commentary: Essential for modern web development. TypeScript has been a game-changer for catching bugs early and improving code maintainability. Building this portfolio really deepened my understanding of React and Next.js.
+projects: Portfolio Website, CipherYou UI, Nokia Dashboard
+learningstatus: proficient
+lastused: Currently using
+
+---
+name: Docker
+category: devops
+icon: 🐳
+proficiency: 85
+experience: 2+ years
+commentary: Containerization revolutionized my development workflow. No more "works on my machine" issues! Used extensively at Nokia for 5G infrastructure deployment and personal projects.
+projects: Wiresnitch, Nokia COSI Architecture, CI/CD Pipelines
+learningstatus: proficient
+lastused: 1 week ago
+
+---
+name: Kubernetes
+category: devops
+icon: ☸️
+proficiency: 75
+experience: 1.5+ years
+commentary: Container orchestration at scale. Learning K8s at Nokia was challenging but incredibly rewarding. The complexity is worth it when you see how elegantly it handles service discovery and scaling.
+projects: Nokia MN RAN COSI, Microservices Deployment
+learningstatus: proficient
+lastused: 2 weeks ago
+certification: CKA (planned)
+
+---
+name: AWS
+category: cloud
+icon: ☁️
+proficiency: 80
+experience: 2+ years
+commentary: My primary cloud platform. The breadth of services is amazing - from simple S3 storage to complex Lambda functions. Nokia's cloud architecture taught me to think about reliability and cost optimization.
+projects: Nokia Cloud Infrastructure, Personal Projects
+learningstatus: proficient
+lastused: 3 days ago
+certification: AWS Solutions Architect (in progress)
+
+---
+name: React/Next.js
+category: framework
+icon: ⚛️
+proficiency: 82
+experience: 2+ years
+commentary: The component-based architecture clicked immediately for me. Next.js added the perfect balance of performance and developer experience. This portfolio is built with Next.js and I love how it handles SSR.
+projects: Portfolio Website, CipherYou Interface, Dashboard UIs
+learningstatus: proficient
+lastused: Currently using
+
+---
+name: PostgreSQL
+category: database
+icon: 🐘
+proficiency: 78
+experience: 2+ years
+commentary: My favorite relational database. The advanced features like JSON support and full-text search make it incredibly versatile. Used it for complex analytics at Anheuser-Busch.
+projects: CyHelp Backend, Analytics Dashboards, CSU Lab Management
+learningstatus: proficient
+lastused: 1 week ago
+
+---
+name: Linux Systems
+category: devops
+icon: 🐧
+proficiency: 90
+experience: 5+ years
+commentary: Linux is my daily driver and development environment. From basic shell scripting to advanced system administration, I'm comfortable across multiple distributions. Arch Linux taught me the internals!
+projects: All Projects, Server Administration, Network Monitoring
+learningstatus: expert
+lastused: Currently using
+
+---
+name: OpenCV
+category: framework
+icon: 👁️
+proficiency: 72
+experience: 1+ years
+commentary: Computer vision and image processing powerhouse. Used it extensively for CyHelp to detect harmful content. The learning curve is steep but the capabilities are incredible for AI applications.
+projects: CyHelp Content Detection, Image Processing Pipeline
+learningstatus: proficient
+lastused: 1 month ago
+
+---
+name: Terraform
+category: devops
+icon: 🏗️
+proficiency: 70
+experience: 1+ years
+commentary: Infrastructure as Code is the future. Terraform makes cloud resource management reproducible and version-controlled. Game-changer for deploying consistent environments across dev/staging/prod.
+projects: Nokia Infrastructure, CI/CD Pipelines
+learningstatus: proficient
+lastused: 2 weeks ago
+
+---
+name: MongoDB
+category: database
+icon: 🍃
+proficiency: 76
+experience: 2+ years
+commentary: NoSQL flexibility for rapid prototyping and document-based data. Perfect for projects where the data structure evolves quickly. Used it for CyHelp to store complex ML model results.
+projects: CyHelp, Rapid Prototypes, Analytics Storage
+learningstatus: proficient
+lastused: 2 weeks ago
+
+---
+name: Jenkins
+category: devops
+icon: 🤖
+proficiency: 73
+experience: 1.5+ years
+commentary: CI/CD automation workhorse. At Nokia, Jenkins pipelines automated our entire deployment process, saving hours of manual work. The plugin ecosystem is vast but can be overwhelming.
+projects: Nokia 5G Deployment, Automated Testing, Release Pipelines
+learningstatus: proficient
+lastused: 3 weeks ago
+
+---
+name: Flask
+category: framework
+icon: 🌶️
+proficiency: 80
+experience: 2+ years
+commentary: Lightweight and flexible Python web framework. I love its simplicity and how quickly you can get APIs up and running. Used it for multiple project backends including CyHelp.
+projects: CyHelp API, Microservices, Prototype APIs
+learningstatus: proficient
+lastused: 1 month ago
+
+---
+name: Git/GitHub
+category: devops
+icon: 📚
+proficiency: 92
+experience: 4+ years
+commentary: Version control is essential for any serious development. I've used Git for everything from solo projects to large team collaborations. GitHub Actions for CI/CD is particularly powerful.
+projects: All Projects, Open Source Contributions, Team Collaboration
+learningstatus: expert
+lastused: Currently using
+
+---
+name: Wireshark
+category: security
+icon: 🦈
+proficiency: 68
+experience: 1+ years
+commentary: Network protocol analyzer that's essential for understanding network traffic. Building Wiresnitch taught me so much about packet analysis and network security fundamentals.
+projects: Wiresnitch Development, Network Debugging, Security Analysis
+learningstatus: learning
+lastused: 2 weeks ago
