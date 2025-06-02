@@ -1,9 +1,14 @@
+// components/ui/button.tsx - Updated with all needed sizes
 'use client';
 import React from 'react';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
+<<<<<<< Updated upstream
   size?: 'sm' | 'md' | 'lg' | 'icon';
+=======
+  size?: 'sm' | 'md' | 'lg' | 'icon'; // Added 'icon' size
+>>>>>>> Stashed changes
   isLoading?: boolean;
 }
 
@@ -29,7 +34,11 @@ export function Button({
     sm: 'px-3 py-1.5 text-sm',
     md: 'px-6 py-3 text-base',
     lg: 'px-8 py-4 text-lg',
+<<<<<<< Updated upstream
     icon: 'h-10 w-10 p-0', // Added icon size for icon-only buttons
+=======
+    icon: 'h-10 w-10 p-0', // Icon size for square buttons
+>>>>>>> Stashed changes
   };
 
   const classes = `${baseStyles} ${variants[variant]} ${sizes[size]} ${isLoading ? 'cursor-not-allowed' : ''} ${className}`;
