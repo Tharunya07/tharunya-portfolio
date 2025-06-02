@@ -34,18 +34,24 @@ export function CardTitle({ children, className = '' }: { children: React.ReactN
 }
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 // Additional components that might be needed by the new sections
 export function CardDescription({ children, className = '' }: { children: React.ReactNode; className?: string }) {
   return <p className={`text-sm text-muted-foreground ${className}`}>{children}</p>;
 }
 
 =======
+=======
+>>>>>>> Stashed changes
 // Added the missing CardDescription component
 export function CardDescription({ children, className = '' }: { children: React.ReactNode; className?: string }) {
   return <p className={`text-sm text-muted ${className}`}>{children}</p>;
 }
 
 // Added the missing CardFooter component
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 export function CardFooter({ children, className = '' }: { children: React.ReactNode; className?: string }) {
   return <div className={`mt-4 pt-4 border-t border-border ${className}`}>{children}</div>;

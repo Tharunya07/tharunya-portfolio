@@ -5,7 +5,11 @@ import React from 'react';
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   size?: 'sm' | 'md' | 'lg' | 'icon';
+=======
+  size?: 'sm' | 'md' | 'lg' | 'icon'; // Added 'icon' size
+>>>>>>> Stashed changes
 =======
   size?: 'sm' | 'md' | 'lg' | 'icon'; // Added 'icon' size
 >>>>>>> Stashed changes
@@ -35,7 +39,11 @@ export function Button({
     md: 'px-6 py-3 text-base',
     lg: 'px-8 py-4 text-lg',
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     icon: 'h-10 w-10 p-0', // Added icon size for icon-only buttons
+=======
+    icon: 'h-10 w-10 p-0', // Icon size for square buttons
+>>>>>>> Stashed changes
 =======
     icon: 'h-10 w-10 p-0', // Icon size for square buttons
 >>>>>>> Stashed changes
