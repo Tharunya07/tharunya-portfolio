@@ -1,7 +1,7 @@
 // components/sections/project-sandboxes.tsx
 'use client';
 
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -105,8 +105,16 @@ function CipherYouDemo() {
 // Wiresnitch Network Monitor Demo
 function WiresnitchDemo() {
   const [isMonitoring, setIsMonitoring] = useState(false);
-  const [packets, setPackets] = useState<Array<{id: number, source: string, dest: string, protocol: string, size: number, status: 'safe' | 'suspicious' | 'blocked'}>>([]);
-  const [packetId, setPacketId] = useState(0);
+  const [packets, setPackets] = useState<Array<{
+    id: number;
+    source: string;
+    dest: string;
+    protocol: string;
+    size: number;
+    status: 'safe' | 'suspicious' | 'blocked';
+  }>>([]);
+  // Use a ref for packet IDs to avoid stale closures and ensure unique keys
+  const packetIdRef = useRef(0);
 
   const protocols = ['HTTP', 'HTTPS', 'TCP', 'UDP', 'SSH', 'FTP'];
   const sources = ['192.168.1.10', '10.0.0.5', '172.16.0.1', '203.0.113.1'];
@@ -117,14 +125,14 @@ function WiresnitchDemo() {
     const dest = destinations[Math.floor(Math.random() * destinations.length)];
     const protocol = protocols[Math.floor(Math.random() * protocols.length)];
     const size = Math.floor(Math.random() * 1500) + 64;
-    
+
     let status: 'safe' | 'suspicious' | 'blocked' = 'safe';
     if (dest.includes('suspicious') || protocol === 'FTP') {
       status = Math.random() > 0.5 ? 'suspicious' : 'blocked';
     }
 
     return {
-      id: packetId,
+      id: packetIdRef.current++,
       source,
       dest,
       protocol,
@@ -136,12 +144,10 @@ function WiresnitchDemo() {
   const startMonitoring = () => {
     setIsMonitoring(true);
     const interval = setInterval(() => {
-      if (packets.length >= 10) {
-        setPackets(prev => [...prev.slice(1), generatePacket()]);
-      } else {
-        setPackets(prev => [...prev, generatePacket()]);
-      }
-      setPacketId(prev => prev + 1);
+      const packet = generatePacket();
+      setPackets(prev =>
+        prev.length >= 10 ? [...prev.slice(1), packet] : [...prev, packet]
+      );
     }, 800);
 
     setTimeout(() => {
@@ -153,7 +159,7 @@ function WiresnitchDemo() {
   const stopMonitoring = () => {
     setIsMonitoring(false);
     setPackets([]);
-    setPacketId(0);
+    packetIdRef.current = 0;
   };
 
   return (
