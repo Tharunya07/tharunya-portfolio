@@ -3,17 +3,9 @@
 import React from 'react';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-  size?: 'sm' | 'md' | 'lg' | 'icon';
-=======
-  size?: 'sm' | 'md' | 'lg' | 'icon'; // Added 'icon' size
->>>>>>> Stashed changes
-=======
-  size?: 'sm' | 'md' | 'lg' | 'icon'; // Added 'icon' size
->>>>>>> Stashed changes
-  isLoading?: boolean;
+variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
+size?: 'sm' | 'md' | 'lg' | 'icon';
+isLoading?: boolean;
 }
 
 export function Button({
@@ -38,23 +30,14 @@ export function Button({
     sm: 'px-3 py-1.5 text-sm',
     md: 'px-6 py-3 text-base',
     lg: 'px-8 py-4 text-lg',
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-    icon: 'h-10 w-10 p-0', // Added icon size for icon-only buttons
-=======
-    icon: 'h-10 w-10 p-0', // Icon size for square buttons
->>>>>>> Stashed changes
-=======
-    icon: 'h-10 w-10 p-0', // Icon size for square buttons
->>>>>>> Stashed changes
+    icon: 'h-10 w-10 p-0', // Icon size for icon-only buttons
   };
-
-  const classes = `${baseStyles} ${variants[variant]} ${sizes[size]} ${isLoading ? 'cursor-not-allowed' : ''} ${className}`;
 
   return (
     <button
-      className={classes}
-      disabled={disabled || isLoading}
+      type="button"
+      className={`${baseStyles} ${variants[variant]} ${sizes[size]} ${className}`}
+      disabled={isLoading || disabled}
       {...props}
     >
       {isLoading ? (

@@ -1,7 +1,7 @@
 // components/sections/terminal-hero.tsx
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronRight, Download, Mail, ExternalLink } from 'lucide-react';
 import Link from 'next/link';
@@ -9,62 +9,102 @@ import Link from 'next/link';
 const TERMINAL_COMMANDS = [
   { command: 'whoami', response: 'Tharunya Pathipati' },
   { 
-    command: 'cat about.txt', 
+    command: 'cat achievements.txt', 
     response: [
-      'Software Engineer & Security Enthusiast',
-      'Pushing the boundaries of technology at the intersection',
-      'of innovation and impact.'
+      '- Global CyberPeace Challenge Winner',
+      '- Nokia Software Engineering Intern',
+      '- CSU Teaching Assistant',
+      '- GDSC Lead - 1000+ students impacted',
+      '- 5G Infrastructure & AI Specialist'
     ]
   },
-  { command: 'echo $STATUS', response: 'Available for opportunities' }
+  { command: 'echo $STATUS', response: '- Available for opportunities' }
 ];
 
 export function TerminalHero() {
   const [terminalLines, setTerminalLines] = useState<string[]>([]);
   const [currentCommand, setCurrentCommand] = useState('');
-  const [commandIndex, setCommandIndex] = useState(0);
-  const [isTyping, setIsTyping] = useState(false);
-
-  // Terminal animation
-  const runCommand = useCallback(async () => {
-    if (isTyping) return;
-    setIsTyping(true);
-
-    const cmd = TERMINAL_COMMANDS[commandIndex];
-    
-    // Type command
-    for (let i = 0; i <= cmd.command.length; i++) {
-      setCurrentCommand(cmd.command.substring(0, i));
-      await new Promise(r => setTimeout(r, 80));
-    }
-    
-    await new Promise(r => setTimeout(r, 500));
-    setTerminalLines(prev => [...prev, `$ ${cmd.command}`]);
-    setCurrentCommand('');
-    
-    // Add response
-    const responses = Array.isArray(cmd.response) ? cmd.response : [cmd.response];
-    for (const line of responses) {
-      await new Promise(r => setTimeout(r, 200));
-      setTerminalLines(prev => [...prev, line]);
-    }
-    
-    await new Promise(r => setTimeout(r, 3000));
-    
-    const next = (commandIndex + 1) % TERMINAL_COMMANDS.length;
-    setCommandIndex(next);
-    if (next === 0) {
-      await new Promise(r => setTimeout(r, 2000));
-      setTerminalLines([]);
-    }
-    
-    setIsTyping(false);
-  }, [isTyping, commandIndex]);
+  const [isActive, setIsActive] = useState(true);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+  const commandIndexRef = useRef(0);
+  const isRunningRef = useRef(false);
 
   useEffect(() => {
-    const timer = setTimeout(runCommand, 1000);
-    return () => clearTimeout(timer);
-  }, [runCommand]);
+    const runTerminalSequence = async () => {
+      if (isRunningRef.current || !isActive) return;
+      isRunningRef.current = true;
+
+      while (isActive) {
+        const cmd = TERMINAL_COMMANDS[commandIndexRef.current];
+        
+        // Clear current command
+        setCurrentCommand('');
+        
+        // Type command
+        for (let i = 0; i <= cmd.command.length; i++) {
+          if (!isActive) break;
+          setCurrentCommand(cmd.command.substring(0, i));
+          await new Promise(resolve => setTimeout(resolve, 200));
+        }
+        
+        if (!isActive) break;
+        
+        // Pause after typing
+        await new Promise(resolve => setTimeout(resolve, 200));
+        
+        // Add command to terminal
+        setTerminalLines(prev => [...prev, `$ ${cmd.command}`]);
+        setCurrentCommand('');
+        
+        // Add responses
+        const responses = Array.isArray(cmd.response) ? cmd.response : [cmd.response];
+        for (const response of responses) {
+          if (!isActive) break;
+          await new Promise(resolve => setTimeout(resolve, 300));
+          setTerminalLines(prev => [...prev, response]);
+        }
+        
+        if (!isActive) break;
+        
+        // Wait before next command
+        await new Promise(resolve => setTimeout(resolve, 300));
+        
+        // Move to next command
+        commandIndexRef.current = (commandIndexRef.current + 1) % TERMINAL_COMMANDS.length;
+        
+        // Clear terminal when starting new cycle
+        if (commandIndexRef.current === 0) {
+          await new Promise(resolve => setTimeout(resolve, 200));
+          if (isActive) {
+            setTerminalLines([]);
+            await new Promise(resolve => setTimeout(resolve, 300));
+          }
+        }
+      }
+      
+      isRunningRef.current = false;
+    };
+
+    // Start the sequence after a brief delay
+    const startDelay = setTimeout(() => {
+      runTerminalSequence();
+    }, 800);
+
+    return () => {
+      clearTimeout(startDelay);
+      setIsActive(false);
+    };
+  }, [isActive]);
+
+  // Cleanup on unmount
+  useEffect(() => {
+    return () => {
+      setIsActive(false);
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    };
+  }, []);
 
   return (
     <section className="min-h-screen flex items-center justify-center px-4 py-20">
@@ -81,13 +121,12 @@ export function TerminalHero() {
           </div>
 
           <p className="text-xl md:text-2xl text-muted max-w-2xl leading-relaxed">
-            Software Engineer & Security Enthusiast pushing the boundaries of technology 
-            at the intersection of <span className="text-primary font-semibold">innovation</span> and <span className="text-accent font-semibold">impact</span>.
+            Software Engineer, Hackathon Enthusiast. Currently building chaotic yet good tech at the edge of <span className="text-primary font-semibold">my seat</span> with <span className="text-accent font-semibold">curiosity</span>.
           </p>
 
           <div className="flex flex-wrap gap-6 text-sm text-muted">
             <div className="flex items-center gap-2">
-              <span className="w-2 h-2 bg-red-500 rounded-full"></span>
+              <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
               Fort Collins, CO, USA
             </div>
             <div className="flex items-center gap-2">
@@ -95,8 +134,8 @@ export function TerminalHero() {
               CSU Graduate Student
             </div>
             <div className="flex items-center gap-2">
-              <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-              Building the Future
+              <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+              Weird Flex: Forklift Certified
             </div>
           </div>
 
@@ -134,18 +173,21 @@ export function TerminalHero() {
               <span className="text-sm text-muted font-mono">tharunya@portfolio:~</span>
             </div>
             
-            <div className="p-6 font-mono text-sm space-y-1 h-[400px] overflow-hidden">
-              {terminalLines.map((line, i) => (
-                <div key={`${commandIndex}-${i}`} className={line.startsWith('$') ? 'text-green-400' : 'text-text'}>
+            <div className="p-6 font-mono text-sm space-y-1 h-[400px] overflow-y-auto">
+              {terminalLines.map((line, index) => (
+                <div 
+                  key={`line-${index}-${line}`}
+                  className={line.startsWith('$') ? 'text-green-400' : 'text-text'}
+                >
                   {line}
                 </div>
               ))}
-              {(currentCommand || isTyping) && (
-                <div className="flex items-center text-green-400">
-                  <span>$ {currentCommand}</span>
-                  <span className="animate-pulse ml-1">█</span>
-                </div>
-              )}
+              
+              {/* Current command being typed */}
+              <div className="flex items-center text-green-400">
+                <span>$ {currentCommand}</span>
+                <span className="animate-pulse ml-1">█</span>
+              </div>
             </div>
           </div>
         </div>

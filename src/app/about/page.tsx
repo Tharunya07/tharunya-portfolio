@@ -11,12 +11,12 @@ import Link from 'next/link';
 // Simplified inline explore cards
 function ExploreSection() {
   return (
-    <section className="py-8 px-4 bg-surface">
+    <section className="py-6 px-4 bg-surface">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-2xl font-bold mb-6 text-primary">Explore More</h2>
        
         <div className="grid md:grid-cols-2 gap-4 mb-6">
-          <Link href="/misc" className="group block">
+          <Link href="/stuff-i-love" className="group block">
             <div className="bg-background border border-border rounded-lg p-4 hover:shadow-md transition-all hover:border-primary/30">
               <div className="flex items-center gap-3">
                 <span className="text-2xl">💚</span>
@@ -28,7 +28,7 @@ function ExploreSection() {
               </div>
             </div>
           </Link>
-          <Link href="/misc" className="group block">
+          <Link href="/blogs" className="group block">
             <div className="bg-background border border-border rounded-lg p-4 hover:shadow-md transition-all hover:border-primary/30">
               <div className="flex items-center gap-3">
                 <span className="text-2xl">📔</span>
@@ -52,19 +52,19 @@ function ExploreSection() {
   );
 }
 
-// Main page component - removed tech stack
+// Main page component - reduced spacing
 function AboutPage() {
   return (
     <div className="min-h-screen bg-background text-text">
       <Header />
       
-      {/* About section with minimal top spacing */}
-      <div className="max-w-6xl mx-auto px-4 pt-4 pb-8">
+      {/* About section with reduced top spacing */}
+      <div className="max-w-6xl mx-auto px-4 pt-2 pb-4">
         <About />
       </div>
 
-      {/* Experience Timeline - Override its padding */}
-      <div className="[&>section]:py-8">
+      {/* Experience Timeline - Reduced padding */}
+      <div className="[&>section]:py-4">
         <ExperienceTimeline />
       </div>
 

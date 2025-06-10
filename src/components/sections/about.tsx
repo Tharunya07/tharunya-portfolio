@@ -1,53 +1,51 @@
 'use client';
 
 import React from 'react';
+import { Shield, Network, Cog, Brain, Code, Users } from 'lucide-react';
 
 export function About() {
+  const skills = [
+    { icon: Shield, label: 'Cybersecurity' },
+    { icon: Cog, label: 'DevOps' },
+    { icon: Brain, label: 'Exploring AI ML' },
+    { icon: Code, label: 'Full-Stack Development' },
+    { icon: Users, label: 'Teaching & Mentoring' }
+  ];
+
   return (
-    <section id="about" className="py-20 px-4">
+    <section id="about" className="py-12 px-4">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-12 text-primary">About Me</h2>
+        <h2 className="text-4xl font-bold text-center mb-8 text-primary">About Me</h2>
         
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="bg-surface border border-border rounded-lg p-8">
             <h3 className="text-2xl font-bold mb-4 text-text">Who I Am</h3>
             <p className="text-muted mb-4">
-              I'm a passionate software engineer and cybersecurity enthusiast currently pursuing 
+              I'm a creative engineer, currently pursuing 
               my Master's in Computer Information Systems at Colorado State University.
             </p>
             <p className="text-muted mb-4">
-              With experience at companies like Nokia and Anheuser-Busch InBev, I specialize in 
-              building scalable systems, automating workflows, and securing digital infrastructures.
+              With experience at companies like Nokia and Anheuser-Busch InBev, I put my energy into 
+              building secure, scalable, and efficient systems. I love tackling complex problems and
+              finding innovative solutions that make a real impact.
             </p>
             <p className="text-muted">
-              When I'm not coding, you'll find me organizing tech events, mentoring students, 
-              or exploring the latest in AI and cloud technologies.
+              When I'm not coding, you'll find me organizing tech events, teaching a class, baking or watching a good movie.
             </p>
           </div>
           
           <div className="bg-surface border border-border rounded-lg p-8">
             <h3 className="text-2xl font-bold mb-4 text-text">What I Do</h3>
             <div className="space-y-4">
-              <div className="flex items-center space-x-3">
-                <span className="text-2xl">🔒</span>
-                <span className="text-text">Cybersecurity & Network Security</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <span className="text-2xl">☁️</span>
-                <span className="text-text">Cloud Computing & DevOps</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <span className="text-2xl">🤖</span>
-                <span className="text-text">AI/ML & Data Analytics</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <span className="text-2xl">🌐</span>
-                <span className="text-text">Full-Stack Development</span>
-              </div>
-              <div className="flex items-center space-x-3">
-                <span className="text-2xl">🎓</span>
-                <span className="text-text">Teaching & Mentoring</span>
-              </div>
+              {skills.map(({ icon: Icon, label }) => (
+                <div key={label} className="flex items-center space-x-3">
+                  <div className="relative flex h-8 w-8 items-center justify-center">
+                    <div className="absolute h-full w-full rounded-full bg-primary/20 animate-pulse"></div>
+                    <Icon className="relative h-4 w-4 text-primary" />
+                  </div>
+                  <span className="text-text">{label}</span>
+                </div>
+              ))}
             </div>
           </div>
         </div>
