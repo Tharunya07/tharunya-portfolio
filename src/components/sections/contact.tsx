@@ -156,7 +156,7 @@ export function Contact() {
           </form>
 
           <p className="text-xs text-muted text-center mt-3">
-            🔒 Opens your email client. No data stored.
+            Opens your email client. No data stored.
           </p>
         </CardContent>
       </Card>

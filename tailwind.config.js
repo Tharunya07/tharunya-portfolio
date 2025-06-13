@@ -15,6 +15,7 @@ module.exports = {
         accent: 'rgb(var(--color-accent) / <alpha-value>)',
         muted: 'rgb(var(--color-muted) / <alpha-value>)',
         border: 'rgb(var(--color-border) / <alpha-value>)',
+        complement: 'rgb(var(--color-complement) / <alpha-value>)',
         
         // Additional colors for UI components
         foreground: 'rgb(var(--color-text) / <alpha-value>)',
@@ -26,7 +27,7 @@ module.exports = {
         'secondary-foreground': 'rgb(var(--color-text) / <alpha-value>)',
         'muted-foreground': 'rgb(var(--color-muted) / <alpha-value>)',
         'accent-foreground': 'rgb(var(--color-text) / <alpha-value>)',
-        destructive: 'hsl(0 84.2% 60.2%)',
+        destructive: 'hsl(0 18.2% 20.2%)',
         'destructive-foreground': 'hsl(210 40% 98%)',
         input: 'rgb(var(--color-border) / <alpha-value>)',
         ring: 'rgb(var(--color-primary) / <alpha-value>)',

@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 import { Sun, Moon } from 'lucide-react';
 
 export function ThemeToggle() {
-  const [theme, setTheme] = useState<'light' | 'dark'>('light');
+  const [theme, setTheme] = useState<'dark' | 'light'>('dark');
 
   useEffect(() => {
     // Check for saved theme or default to light
@@ -22,11 +22,11 @@ export function ThemeToggle() {
     const root = document.documentElement;
     
     if (newTheme === 'dark') {
-      // Retro theme as dark
-      root.setAttribute('data-theme', 'retro');
+      // dark theme as dark
+      root.setAttribute('data-theme', 'dark');
     } else {
-      // Cloud theme as light
-      root.setAttribute('data-theme', 'cloud');
+      // light theme as light
+      root.setAttribute('data-theme', 'light');
     }
     
     localStorage.setItem('theme', newTheme);

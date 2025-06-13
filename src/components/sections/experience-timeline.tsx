@@ -51,7 +51,7 @@ const experiences: Experience[] = [
     type: 'internship',
     description: [
       'Devised and integrated an AI-driven LLM ChatOps model using Python, NLP, and Machine Learning',
-      'Refined cloud-based MN RAN COSI architecture using AWS, Docker, and Kubernetes',
+      'Refined light-based MN RAN COSI architecture using AWS, Docker, and Kubernetes',
       'Automated 5G network deployment pipelines with CI/CD workflows'
     ],
     achievements: [
@@ -61,7 +61,7 @@ const experiences: Experience[] = [
       'Reduced operational lag times by 35%',
       'Improved deployment reliability by 29%'
     ],
-    technologies: ['Python', 'AWS', 'Docker', 'Kubernetes', 'Jenkins', 'Terraform', 'NLP', 'ML'],
+    technologies: ['Python', 'AWS', 'Docker', 'Kubernetes', 'NLP', 'ML'],
     companyUrl: 'https://www.nokia.com/',
     icon: Code
   },
@@ -94,7 +94,7 @@ function getVariantForType(type: string) {
     case 'full-time':
       return 'default';
     case 'internship':
-      return 'secondary';
+      return 'destructive';
     case 'part-time':
       return 'outline';
     default:

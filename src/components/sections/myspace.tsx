@@ -1,4 +1,4 @@
-// components/sections/stuff-i-love-shelf.tsx
+// components/sections/myspace-shelf.tsx
 'use client';
 
 import { useState, useRef } from 'react';
@@ -69,7 +69,7 @@ const shelfItems: ShelfItem[] = [
     author: 'Dr. Werner Vogels',
     rating: 5,
     image: '☁️',
-    tags: ['cloud', 'aws', 'distributed-systems'],
+    tags: ['light', 'aws', 'distributed-systems'],
     year: 2023,
     link: 'https://www.youtube.com/watch?v=example'
   },
@@ -161,7 +161,7 @@ const categoryColors = {
   article: 'bg-orange-100 text-orange-800 dark:bg-orange-900 dark:text-orange-300'
 };
 
-export function StuffILoveShelf() {
+export function MySpace() {
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
   const [hoveredItem, setHoveredItem] = useState<string | null>(null);
   const [favorites, setFavorites] = useState<Set<string>>(new Set());
@@ -215,7 +215,7 @@ export function StuffILoveShelf() {
     <section className="py-20 px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold mb-4 text-primary">Stuff I Love 💚</h2>
+          <h2 className="text-4xl font-bold mb-4 text-primary">My Space 💚</h2>
           <p className="text-xl text-muted max-w-2xl mx-auto">
             Books, talks, tools, and resources that have shaped my journey as an engineer.
           </p>

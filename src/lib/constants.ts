@@ -12,17 +12,15 @@ export const SITE_CONFIG = {
     degree: 'Master of Science in Computer Information Systems',
   },
   navigation: [
-    { href: '#hero', label: 'Home' },
+    { href: '#home', label: 'Home' },
     { href: '#about', label: 'About' },
     { href: '#projects', label: 'Projects' },
     { href: '#experience', label: 'Experience' },
     { href: '#contact', label: 'Contact' },
   ],
   themes: [
-    { id: 'light' as const, emoji: '☀️', name: 'Light Mode' },
-    { id: 'hacker' as const, emoji: '🖥️', name: 'Hacker Mode' },
-    { id: 'cloud' as const, emoji: '☁️', name: 'Cloud Mode' },
-    { id: 'retro' as const, emoji: '🕹️', name: 'Retro Mode' },
+    { id: 'light' as const, emoji: '☁️', name: 'light Mode' },
+    { id: 'dark' as const, emoji: '🕹️', name: 'dark Mode' },
   ],
 } as const;
 
@@ -33,7 +31,7 @@ export const TECH_STACK = [
   { name: 'React', icon: '⚛️', level: 'Advanced', category: 'Frontend' },
   { name: 'Next.js', icon: '▲', level: 'Advanced', category: 'Frontend' },
   { name: 'Docker', icon: '🐳', level: 'Advanced', category: 'DevOps' },
-  { name: 'AWS', icon: '☁️', level: 'Advanced', category: 'Cloud' },
+  { name: 'AWS', icon: '☁️', level: 'Advanced', category: 'light' },
   { name: 'Linux', icon: '🐧', level: 'Expert', category: 'Systems' },
   { name: 'Node.js', icon: '💚', level: 'Intermediate', category: 'Backend' },
   { name: 'Kubernetes', icon: '⛵', level: 'Intermediate', category: 'DevOps' },

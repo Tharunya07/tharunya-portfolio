@@ -1,36 +1,35 @@
-// app/stuff-i-love/page.tsx
+// app/myspace/page.tsx
 import { ThemeProvider } from '@/components/theme/theme-provider';
 import { Header } from '@/components/layout/header';
-import { StuffILoveCards } from '@/components/sections/stuff-i-love-cards';
+import { MySpaceContent } from '@/components/sections/myspace-content';
 import { Footer } from '@/components/layout/footer';
 
-function StuffILovePage() {
+function MySpacePage() {
   return (
     <div className="min-h-screen bg-background text-text transition-colors duration-300">
       <Header />
-      
-      {/* Hero Section */}
-      <section className="py-12 px-4 text-center">
+    
+      <section className="py-8 px-4 text-center">
         <div className="max-w-4xl mx-auto">
-          <h1 className="text-5xl font-bold mb-6 text-primary">Stuff I Love 💚</h1>
+          <h1 className="text-4xl font-bold mb-4 text-primary">My Space</h1>
           <p className="text-xl text-muted max-w-2xl mx-auto">
-            Books, talks, tools, and resources that have shaped my journey as an engineer.
+            A curated corner of everything that moves me, tech that excites me, people who uplift me, and communities that remind me why I do what I do.
           </p>
         </div>
       </section>
 
-      {/* Stuff I Love Cards */}
-      <StuffILoveCards />
+      {/* Content */}
+      <MySpaceContent />
 
       <Footer />
     </div>
   );
 }
 
-export default function StuffILove() {
+export default function MySpace() {
   return (
     <ThemeProvider>
-      <StuffILovePage />
+      <MySpacePage />
     </ThemeProvider>
   );
 }

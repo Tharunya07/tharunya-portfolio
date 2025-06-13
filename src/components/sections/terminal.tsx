@@ -1,4 +1,4 @@
-// components/sections/terminal-hero.tsx
+// components/sections/terminal.tsx
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
@@ -21,7 +21,7 @@ const TERMINAL_COMMANDS = [
   { command: 'echo $STATUS', response: '- Available for opportunities' }
 ];
 
-export function TerminalHero() {
+export function Terminal() {
   const [terminalLines, setTerminalLines] = useState<string[]>([]);
   const [currentCommand, setCurrentCommand] = useState('');
   const [isActive, setIsActive] = useState(true);
@@ -121,20 +121,20 @@ export function TerminalHero() {
           </div>
 
           <p className="text-xl md:text-2xl text-muted max-w-2xl leading-relaxed">
-            Software Engineer, Hackathon Enthusiast. Currently building chaotic yet good tech at the edge of <span className="text-primary font-semibold">my seat</span> with <span className="text-accent font-semibold">curiosity</span>.
+             I break things. Then I build <span className="text-primary font-semibold">better </span>ones.
           </p>
 
           <div className="flex flex-wrap gap-6 text-sm text-muted">
             <div className="flex items-center gap-2">
-              <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+              <span className="w-2 h-2 bg-complement rounded-full"></span>
               Fort Collins, CO, USA
             </div>
             <div className="flex items-center gap-2">
-              <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+              <span className="w-2 h-2 bg-complement rounded-full"></span>
               CSU Graduate Student
             </div>
             <div className="flex items-center gap-2">
-              <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
+              <span className="w-2 h-2 bg-complement rounded-full"></span>
               Weird Flex: Forklift Certified
             </div>
           </div>
@@ -177,14 +177,14 @@ export function TerminalHero() {
               {terminalLines.map((line, index) => (
                 <div 
                   key={`line-${index}-${line}`}
-                  className={line.startsWith('$') ? 'text-green-400' : 'text-text'}
+                  className={line.startsWith('$') ? 'text-complement font-semibold' : 'text-complement'}
                 >
                   {line}
                 </div>
               ))}
               
               {/* Current command being typed */}
-              <div className="flex items-center text-green-400">
+              <div className="flex items-center text-complement font-semibold">
                 <span>$ {currentCommand}</span>
                 <span className="animate-pulse ml-1">█</span>
               </div>
