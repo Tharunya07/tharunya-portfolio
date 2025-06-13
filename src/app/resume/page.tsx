@@ -9,8 +9,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
 import { Input } from '@/components/ui/input';
-import { Badge } from '@/components/ui/badge';
-import { Download, Mail, Send, FileText, MessageSquare, Star, Eye, Clock, Users } from 'lucide-react';
+import { Download, Mail, Send, FileText, MessageSquare } from 'lucide-react';
 
 function ResumePage() {
   const [feedbackForm, setFeedbackForm] = useState({
@@ -108,7 +107,7 @@ function ResumePage() {
                 </Button>
                 <Button className="w-full" variant="outline" onClick={() => window.open('/contact', '_blank')}>
                   <MessageSquare className="w-4 h-4 mr-2" />
-                  Let's Connect
+                  Let&apos;s Connect
                 </Button>
               </CardContent>
             </Card>
@@ -123,7 +122,7 @@ function ResumePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-sm text-muted mb-4">
-                  Have suggestions for my resume? I'd love to hear your thoughts!
+                  Have suggestions for my resume? I&apos;d love to hear your thoughts!
                 </p>
                 
                 <div className="space-y-4">

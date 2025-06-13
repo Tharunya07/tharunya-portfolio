@@ -12,10 +12,8 @@ const TERMINAL_COMMANDS = [
     command: 'cat achievements.txt', 
     response: [
       '- Global CyberPeace Challenge Winner',
-      '- Nokia Software Engineering Intern',
       '- CSU Teaching Assistant',
-      '- GDSC Lead - 1000+ students impacted',
-      '- 5G Infrastructure & AI Specialist'
+      '- GDSC Lead - 1000+ students impacted'
     ]
   },
   { command: 'echo $STATUS', response: '- Available for opportunities' }

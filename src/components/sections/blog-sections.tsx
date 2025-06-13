@@ -242,7 +242,7 @@ export function BlogsSection() {
                 No Blog Posts Found
               </h3>
               <p className="text-blue-700 dark:text-blue-300 mb-6">
-                I haven't published any posts on Medium yet, or they're not publicly available.
+                I haven&apos;t published any posts on Medium yet, or they&apos;re not publicly available.
               </p>
               <Button 
                 onClick={() => window.open('https://medium.com/@Tharunya', '_blank')}

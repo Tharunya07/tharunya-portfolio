@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Shield, Network, Cog, Brain, Code, Users } from 'lucide-react';
+import { Shield, Cog, Brain, Code, Users } from 'lucide-react';
 
 export function About() {
   const skills = [
@@ -21,8 +21,8 @@ export function About() {
           <div className="bg-surface border border-border rounded-lg p-8">
             <h3 className="text-2xl font-bold mb-4 text-text">Who I Am</h3>
             <p className="text-muted mb-4">
-              I'm a creative engineer, currently pursuing 
-              my Master's in Computer Information Systems at Colorado State University.
+              I&apos;m a creative engineer, currently pursuing 
+              my Master&apos;s in Computer Information Systems at Colorado State University.
             </p>
             <p className="text-muted mb-4">
               With experience at companies like Nokia and Anheuser-Busch InBev, I put my energy into 
@@ -30,7 +30,7 @@ export function About() {
               finding innovative solutions that make a real impact.
             </p>
             <p className="text-muted">
-              When I'm not coding, you'll find me organizing tech events, teaching a class, baking or watching a good movie.
+              When I&apos;m not coding, you&apos;ll find me organizing tech events, teaching a class, baking or watching a good movie.
             </p>
           </div>
           
