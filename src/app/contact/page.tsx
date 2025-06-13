@@ -13,9 +13,9 @@ function ContactPage() {
       <section className="py-12 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold mb-4 text-primary">Let's Connect!</h1>
+            <h1 className="text-4xl font-bold mb-4 text-primary">Let&apos;s Connect!</h1>
             <p className="text-lg text-muted max-w-2xl mx-auto">
-              I'd love to connect with you! Whether it's about opportunities, 
+              I&apos;d love to connect with you! Whether it&apos;s about opportunities, 
               collaborations, or just having a great conversation about tech!
             </p>
           </div>

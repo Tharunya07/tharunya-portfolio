@@ -4,7 +4,7 @@
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
-import { MapPin, Calendar, ExternalLink, Award, Users, TrendingUp, Building, Code, Database } from 'lucide-react';
+import { MapPin, Calendar, ExternalLink, Award, Users, Building, Code, Database } from 'lucide-react';
 
 interface Experience {
   id: string;
@@ -114,7 +114,7 @@ export function ExperienceTimeline() {
         </div>
 
         <div className="space-y-8">
-          {experiences.map((exp, index) => {
+          {experiences.map((exp) => {
             const IconComponent = exp.icon;
             return (
               <div key={exp.id} className="relative">
