@@ -1,7 +1,6 @@
 // components/layout/footer.tsx
 'use client';
 
-import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Github, Linkedin, Mail } from 'lucide-react';
 
@@ -27,48 +26,43 @@ export function Footer() {
   ];
 
   return (
-    <footer className="border-t border-border bg-surface py-8">
+    <footer className="border-t border-border bg-background py-4">
       <div className="max-w-7xl mx-auto px-4">
-        {/* Main Footer Content */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+        {/* Single row layout */}
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4">
           {/* Left: Copyright */}
-          <div className="text-sm text-muted">
+          <div className="text-sm text-muted order-2 md:order-1">
             © {currentYear} Tharunya Pathipati. All rights reserved.
           </div>
 
           {/* Center: Social Links */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3 order-1 md:order-2">
             {socialLinks.map((social) => (
               <Button
                 key={social.href}
                 variant="ghost"
                 size="icon"
                 onClick={() => window.open(social.href, '_blank')}
-                className="h-8 w-8"
+                className="h-8 w-8 hover:bg-primary/10"
+                title={social.label}
               >
                 {social.icon}
               </Button>
             ))}
           </div>
 
-          {/* Right: Built with */}
-          <div className="text-xs text-muted">
-            Built with Next.js & TypeScript
-          </div>
-        </div>
-
-        {/* Bottom: License */}
-        <div className="mt-6 pt-6 border-t border-border text-center">
-          <p className="text-xs text-muted">
-            Open source under{' '}
+          {/* Right: Built with + License */}
+          <div className="flex items-center gap-4 text-xs text-muted order-3">
+            <span>Built with Next.js & TypeScript</span>
+            <span>•</span>
             <Button
               variant="ghost"
-              className="h-auto p-0 text-xs text-primary hover:underline"
+              className="h-auto p-0 text-xs text-muted hover:text-primary hover:underline"
               onClick={() => window.open('https://opensource.org/licenses/MIT', '_blank')}
             >
               MIT License
             </Button>
-          </p>
+          </div>
         </div>
       </div>
     </footer>

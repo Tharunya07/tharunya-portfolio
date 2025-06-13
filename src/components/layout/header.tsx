@@ -23,7 +23,7 @@ export function Header() {
   ];
 
   const miscItems = [
-    { label: 'Stuff I Love', href: '/stuff-i-love' },
+    { label: 'My Space', href: '/myspace' },
     { label: 'Blogs', href: '/blogs' },
   ];
 

@@ -16,12 +16,12 @@ function ExploreSection() {
         <h2 className="text-2xl font-bold mb-6 text-primary">Explore More</h2>
        
         <div className="grid md:grid-cols-2 gap-4 mb-6">
-          <Link href="/stuff-i-love" className="group block">
+          <Link href="/myspace" className="group block">
             <div className="bg-background border border-border rounded-lg p-4 hover:shadow-md transition-all hover:border-primary/30">
               <div className="flex items-center gap-3">
                 <span className="text-2xl">💚</span>
                 <div className="text-left flex-1">
-                  <h3 className="font-semibold text-text group-hover:text-primary transition-colors">Stuff I Love</h3>
+                  <h3 className="font-semibold text-text group-hover:text-primary transition-colors">My Space</h3>
                   <p className="text-sm text-muted">Books, tools, and resources</p>
                 </div>
                 <ArrowRight className="w-4 h-4 text-muted group-hover:text-primary group-hover:translate-x-1 transition-all" />

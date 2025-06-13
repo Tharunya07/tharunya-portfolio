@@ -1,7 +1,7 @@
 // app/projects/page.tsx
 import { ThemeProvider } from '@/components/theme/theme-provider';
 import { Header } from '@/components/layout/header';
-import { ProjectSandboxes } from '@/components/sections/project-sandboxes';
+import { Projects } from '@/components/sections/projects';
 import { TechStack } from '@/components/sections/tech-stack';
 import { Footer } from '@/components/layout/footer';
 
@@ -10,18 +10,21 @@ function ProjectsPage() {
     <div className="min-h-screen bg-background text-text transition-colors duration-300">
       <Header />
       
-      {/* Project Demonstrations */}
-      <ProjectSandboxes />
-      
-      {/* Tech Stack */}
-      <TechStack />
+      {/* Reduced top spacing */}
+      <div className="pt-4">
+        {/* Projects Section */}
+        <Projects />
+        
+        {/* Tech Stack */}
+        <TechStack />
+      </div>
 
       <Footer />
     </div>
   );
 }
 
-export default function Projects() {
+export default function ProjectsPageWrapper() {
   return (
     <ThemeProvider>
       <ProjectsPage />

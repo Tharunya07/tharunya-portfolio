@@ -13,34 +13,24 @@
   --color-accent: 6 182 212;          /* Cyan */
   --color-muted: 100 116 139;         /* Muted Gray */
   --color-border: 226 232 240;        /* Light Border */
+  --color-complement: 0 0 0;          /* Black for contrast */
 }
 
-[data-theme="hacker"] {
-  /* Hacker Theme - Matrix Green */
-  --color-primary: 0 255 0;           /* Bright Green */
-  --color-secondary: 0 128 0;         /* Dark Green */
-  --color-background: 0 0 0;          /* Black */
-  --color-surface: 17 17 17;          /* Dark Gray */
-  --color-text: 0 255 0;              /* Bright Green */
-  --color-accent: 255 255 0;          /* Yellow */
-  --color-muted: 64 64 64;            /* Gray */
-  --color-border: 51 51 51;           /* Dark Border */
+[data-theme="light"] {
+  /* Light Theme – Professional & Soft Complement to dark */
+  --color-primary: 0 108 255;       /* Indigo Blue */
+  --color-secondary: 71 85 105;      /* Cool Slate */
+  --color-background: 255 255 255;   /* Pure White */
+  --color-surface: 245 245 250;      /* Light Lavender Gray */
+  --color-text: 15 23 42;            /* Deep Navy for readability */
+  --color-accent: 251 191 36;        /* Warm Golden Accent */
+  --color-muted: 148 163 184;        /* Muted Gray */
+  --color-border: 229 231 235;       /* Soft Light Gray Border */
+  --color-complement: 0 0 0;         /* Black for contrast */
 }
 
-[data-theme="cloud"] {
-  /* Cloud Theme - Sky Blue */
-  --color-primary: 14 165 233;        /* Sky Blue */
-  --color-secondary: 2 132 199;       /* Blue */
-  --color-background: 240 249 255;    /* Light Blue */
-  --color-surface: 255 255 255;       /* White */
-  --color-text: 12 74 110;            /* Dark Blue */
-  --color-accent: 56 189 248;         /* Light Blue */
-  --color-muted: 100 116 139;         /* Blue Gray */
-  --color-border: 186 230 253;        /* Light Blue Border */
-}
-
-[data-theme="retro"] {
-  /* Retro Theme - Purple/Pink Gaming */
+[data-theme="dark"] {
+  /* dark Theme - Purple/Pink Gaming */
   --color-primary: 168 85 247;        /* Purple */
   --color-secondary: 147 51 234;      /* Dark Purple */
   --color-background: 15 23 42;       /* Dark Blue */
@@ -49,6 +39,7 @@
   --color-accent: 236 72 153;         /* Pink */
   --color-muted: 148 163 184;         /* Light Gray */
   --color-border: 71 85 105;          /* Dark Border */
+  --color-complement: 255 255 255;    /* White for contrast */
 }
 
 /* Base styles */

@@ -17,9 +17,9 @@ export function ThemeProvider({ children }: ThemeProviderProps) {
     // Apply initial theme
     const root = document.documentElement;
     if (initialTheme === 'dark') {
-      root.setAttribute('data-theme', 'retro');
+      root.setAttribute('data-theme', 'dark');
     } else {
-      root.setAttribute('data-theme', 'cloud');
+      root.setAttribute('data-theme', 'light');
     }
   }, []);
 

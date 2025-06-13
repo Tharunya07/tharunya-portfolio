@@ -84,7 +84,7 @@ const parseMediumRSS = async (username: string): Promise<BlogPost[]> => {
         
         if (text.includes('security') || text.includes('cybersecurity') || text.includes('ctf')) return '🔒';
         if (text.includes('ai') || text.includes('machine learning') || text.includes('ml')) return '🤖';
-        if (text.includes('cloud') || text.includes('aws') || text.includes('azure')) return '☁️';
+        if (text.includes('light') || text.includes('aws') || text.includes('azure')) return '☁️';
         if (text.includes('devops') || text.includes('docker') || text.includes('kubernetes')) return '🚀';
         if (text.includes('data') || text.includes('analytics') || text.includes('database')) return '📊';
         if (text.includes('web') || text.includes('frontend') || text.includes('react')) return '🌐';
